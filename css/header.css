@@ -1,0 +1,95 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    color: #464646  ;
+}
+
+.header-top{
+    display: flex;
+    margin: 1% 10%;
+}
+
+.header-logo{
+    margin-right: 2%;  
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 60%;
+    margin-right: 20%;
+}
+
+.header-search{
+    width: 70%;
+    height: 80%;
+    border-radius: 30px;
+    border: none;
+    background-color: #f5f5f5 ;
+    padding: 0 30px;
+}
+
+.search{
+    position: absolute;
+    right: 180px;
+    bottom: 14px;
+    font-size: 22px;
+    color:#464646
+}
+
+.header-login{
+    width: 15%;
+    border-color: #2a7ae4 ;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.header-login-link{
+    color: #2a7ae4;
+    text-decoration: none;
+}
+
+.header-login:hover{
+    background-color:#eaf2fd ;
+}
+
+.header-banner{
+    width: 100%;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+}
+
+.header-banner-text{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.header-banner-title{
+    font-size: 53px;
+    margin-bottom: 3%;
+}
+
+.header-banner-subtitle{
+    font-size: 25px;
+}
+
+.header-button{
+    border:none;
+    background-color:#2a7ae4 ; 
+    color:white;
+    border-radius: 10px;
+    padding: 15px;;
+}
+
+.header-button:hover , .form-button:hover {
+    background-color: #125fc3;
+}
