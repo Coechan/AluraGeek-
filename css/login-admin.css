@@ -27,9 +27,9 @@
 }
 
 .login-input , .login-button, .add-input , .add-button , .add-textarea{
-    width: 100%;
+    width: 96%;
     height: 55px;
-    margin: 2%;
+    margin-bottom: 3%;
     border: none;
     border-radius: 10px;
     font-size: 20px;
@@ -37,9 +37,17 @@
    
 }
 
+.input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
 .login-button, .add-button{
     background-color:#2a7ae4 ; 
     color:white;
+    padding: 0;
 }
 
 .add-textarea{

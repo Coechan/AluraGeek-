@@ -37,6 +37,13 @@ margin-bottom: 30px;
     margin: 0;
 }
 
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+
 .form-input{
     height: 35px;
     width: 70%;
@@ -47,11 +54,18 @@ margin-bottom: 30px;
     margin: 2% 0%;
 }
 
+.form-input-error{
+    border: tomato solid 1px;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
 .form-textarea{
     height: 108px;
     padding: 5px;
     resize: none;
-    margin-bottom: 5%;
 }
 
 .form-input::placeholder{

@@ -24,9 +24,17 @@
     <main class="wrapper">
         <section class="login">
             <h1>Welcome!</h1>
-            <input class="login-input" type="email" placeholder="e-mail">
-            <input class="login-input" type="password" placeholder="password">
-            <button class="login-button">Log in</button>
+            <div class="input-container">
+                <label for="email" class="hidden">Email</label>
+                <input class="login-input" id="email" type="email" placeholder="e-mail">
+                <span class="hidden" id="emailError">El campo no puede estar vacio</span>
+            </div>
+            <div class="input-container">
+                <label for="password"></label>
+                <input class="login-input" id="password" type="password" placeholder="password">
+                <span class="hidden" id="passwordError">El campo no puede estar vacio</span>
+            </div>
+            <button class="login-button" id="btnLogin">Log in</button>
         </section>
     </main>
     <footer class="footer">
@@ -42,11 +50,19 @@
             <li class="list-item"><a class="nav-item" href="#">Publicity</a></li>
         </nav>
         <form class="footer-form">
-                <h3 class="form-title">Talk to us!</h3>
-                <input class="form-input" type="text" placeholder="Name">
-                <textarea class="form-input form-textarea" placeholder="Leave your comments here"></textarea>
-                <button class="form-button">Submit</button>
+            <h3 class="form-title">Talk to us!</h3>
+            <div class="input-container">
+            <label class="input-label hidden" for="name">Name</label>
+            <input name="name" id="nameInput" class="form-input" type="text" placeholder="Name" required minlength="1" maxlength="50">
+            <span id="error" class="hidden">Solo permite letras</span>
+            </div>
+            <div class="input-container">
+            <textarea class="form-input form-textarea" id="textarea" placeholder="Leave your comments here" maxlength="1000"></textarea>
+            <span id="textarea-error" class="hidden" >Este campo esta vacio</span>
+            </div>
+            <button class="form-button" id="formButton" type="submit">Submit</button>
         </form>
-    </footer>    
+    </footer> 
+    <script src="./js/login.js" type="module"></script>   
 </body>
 </html>

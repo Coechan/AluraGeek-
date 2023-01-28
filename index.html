@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:ital,wght@0,400;0,700;1,300&family=Nunito:ital,wght@0,200;0,300;1,200&family=Open+Sans:wght@300;400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>AluraGeek</title>
 </head>
 <body class="wrapper">
@@ -183,12 +184,19 @@
             </nav>
             <form class="footer-form">
                     <h3 class="form-title">Talk to us!</h3>
-                    <input class="form-input" type="text" placeholder="Name">
-                    <textarea class="form-input form-textarea" placeholder="Leave your comments here"></textarea>
-                    <button class="form-button">Submit</button>
-            </form>
+                    <div class="input-container">
+                    <label class="input-label hidden" for="name">Name</label>
+                    <input name="name" id="nameInput" class="form-input" type="text" placeholder="Name" required minlength="1" maxlength="50">
+                    <span id="error" class="hidden">Solo permite letras</span>
+                    </div>
+                    <div class="input-container">
+                    <textarea class="form-input form-textarea" id="textarea" placeholder="Leave your comments here" maxlength="1000"></textarea>
+                    <span id="textarea-error" class="hidden" >Este campo esta vacio</span>
+                    </div>
+                    <button class="form-button" id="formButton" type="submit">Submit</button>
+                </form>
         </footer>
-        <script src="./js/script.js"></script>
+        <script src="./js/index.js" type="module"></script>
 </body>
 </html>
 
